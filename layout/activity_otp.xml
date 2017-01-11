@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="in.co.retail.kohlibrothers.Activity.OTPActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Enter OTP : "/>
+
+        <EditText
+            android:id="@+id/txtOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter the OTP Here"
+            android:inputType="number"
+            android:maxLength="6" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOTPvalidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterOTPGenerated"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_green_table"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:text="VALIDATE" />
+
+</LinearLayout>
+
